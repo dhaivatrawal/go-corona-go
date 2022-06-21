@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#263238"
+    tools:context="com.zedr_apps.cvd.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"/>
+
+        <ImageView
+            android:id="@+id/rateMe"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rate"
+            android:layout_toLeftOf="@id/share"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"/>
+
+        <ImageView
+            android:id="@+id/buttonShowCustomDialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtone"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reg"
+            android:textColor="#ffffff"
+            android:textSize="40dp"
+            android:text="COVID-19"/>
+
+        <View
+            android:id="@+id/vone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtone"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#b0bec5"/>
+    </RelativeLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ccdseven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loogo" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Latest News of CoronaVirus:"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ccdtwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/loogo" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:text="Confirmed Cases by Country, Territory, or Conveyance:"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ccdthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loogo" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Coronavirus Symptoms:"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ccdfour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loogo" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="How to Protect Yourself Coronavirus:"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ccdfive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loogo" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="What To Do if You Are Sick:"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ccdsix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loogo" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Coronavirus Cases:"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ccdone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="10dp">
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loogo" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Countries where COVID-19 has spread:"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
